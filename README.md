@@ -16,6 +16,5 @@ Here are some ideas to get you started:
 -->
 
 <div align="center"> 
-  <p>Visitor count</p>
-  <img src="https://github.com/belenbaena" alt="Visitor's Count" />
+  [Profile view counter on GitHub](https://github.com/belenbaena)
 </div>
