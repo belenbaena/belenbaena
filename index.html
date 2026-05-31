@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #f6fbf7;
+      --primary: #2f5d50;
+      --accent: #6aa68b;
+      --soft: #dfeee6;
+      --text: #1f2a24;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 80px 20px 40px;
+      text-align: center;
+      background: linear-gradient(135deg, var(--soft), #ffffff);
+    }
+
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+      color: var(--primary);
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 1.1rem;
+      color: var(--accent);
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 15px;
+      background: white;
+      position: sticky;
+      top: 0;
+      border-bottom: 1px solid var(--soft);
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--primary);
+      font-weight: 500;
+    }
+
+    section {
+      max-width: 900px;
+      margin: auto;
+      padding: 60px 20px;
+    }
+
+    h2 {
+      font-family: 'Playfair Display', serif;
+      color: var(--primary);
+      margin-bottom: 20px;
+    }
+
+    .card {
+      background: white;
+      border: 1px solid var(--soft);
+      padding: 20px;
+      border-radius: 12px;
+      margin-bottom: 15px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px;
+      color: var(--accent);
+      font-size: 0.9rem;
+    }
+
+    .tag {
+      display: inline-block;
+      background: var(--soft);
+      color: var(--primary);
+      padding: 4px 10px;
+      border-radius: 999px;
+      font-size: 0.8rem;
+      margin-right: 5px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Your Name</h1>
+  <p>Student • Builder • Occasional overthinker</p>
+</header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#projects">Projects</a>
+  <a href="#skills">Skills</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+  <h2>About Me</h2>
+  <div class="card">
+    <p>
+      I’m someone who enjoys building things on the internet, learning new technologies,
+      and occasionally breaking my own code just to feel something.
+      This is my personal portfolio where I showcase projects and ideas.
+    </p>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Project One</h3>
+      <p>A short description of what it does and why it exists.</p>
+      <span class="tag">HTML</span>
+      <span class="tag">CSS</span>
+    </div>
+    <div class="card">
+      <h3>Project Two</h3>
+      <p>Another project that probably solved a very specific problem.</p>
+      <span class="tag">JavaScript</span>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="card">
+    <span class="tag">HTML</span>
+    <span class="tag">CSS</span>
+    <span class="tag">JavaScript</span>
+    <span class="tag">Python</span>
+    <span class="tag">Problem Solving</span>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <div class="card">
+    <p>Email: yourname@example.com</p>
+    <p>GitHub: github.com/yourusername</p>
+  </div>
+</section>
+
+<footer>
+  <p>Built with mild chaos and a lot of trial and error.</p>
+</footer>
+
+</body>
+</html>
